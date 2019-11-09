@@ -1,22 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Decaf WiiU Emulator</title>
-    <style type="text/css">
-        .wrapper {
-            width: 600px;
-            text-align: center;
-            margin: auto;
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>decaf-emu</title>
+    <style>
+        body {
+            background-color: #202020;
+            margin: 10vh;
+        }
+
+        .center-me {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+        }
+
+        .logo {
+            -webkit-animation: filter-animation 8s infinite;
+            animation: filter-animation 8s infinite;
+        }
+
+        @-webkit-keyframes filter-animation {
+            0% {
+                -webkit-filter: hue-rotate(0deg);
+            }
+
+            100% {
+                -webkit-filter: hue-rotate(360deg);
+            }
+        }
+
+        @keyframes filter-animation {
+            0% {
+                filter: hue-rotate(0deg);
+            }
+
+            100% {
+                filter: hue-rotate(360deg);
+            }
         }
     </style>
 </head>
+
 <body>
-    <div class="wrapper">
-        <br /><br /><br /><br /><br /><br />
-        <img src="banner.png" width="294" height="80" />
-        <br /><br /><br /><br />
-        <b><a href="https://github.com/decaf-emu">https://github.com/decaf-emu</a></b>
-    </div>
+    <a href="https://github.com/decaf-emu/decaf-emu">
+        <div class="center-me"><img class="logo" src="logo.svg"></div>
+    </a>
 </body>
+
 </html>
